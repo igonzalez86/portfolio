@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    :root {
+      --color-a: #0072B8;
+      --color-b: #E85C22;
+      --color-text-a: #E85C22;
+      --color-text-b: #0072B8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      min-width: 100vw;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    .split {
+      display: flex;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    .panel {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+
+    .panel--izq {
+      background: var(--color-a);
+      color: var(--color-text-a);
+    }
+
+    .panel--der {
+      background: var(--color-b);
+      color: var(--color-text-b);
+    }
+
+    .lista-botones {
+      width: 100%;
+      max-width: 420px;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .boton-link {
+      display: block;
+      width: 100%;
+      text-decoration: none;
+      text-align: center;
+      padding: 0.7rem 1rem;
+      border-radius: 999px;
+      border: 2px solid currentColor;
+      color: currentColor;
+      background: transparent;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      cursor: pointer;
+    }
+
+    .boton-link:focus-visible {
+      outline: 2px solid currentColor;
+      outline-offset: 3px;
+    }
+
+    @media (max-width: 768px) {
+      :root {
+        --color-a: #208380;
+        --color-b: #D8125A;
+        --color-text-a: #D8125A;
+        --color-text-b: #208380;
+      }
+
+      .split {
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+      }
+
+      .panel {
+        height: 50vh;
+        width: 100vw;
+        padding: 1rem;
+      }
+
+      .lista-botones {
+        max-width: 360px;
+        gap: 0.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="split">
+    <section class="panel panel--izq">
+      <div class="lista-botones">
+        <a href="https://igonzalez86.github.io/P1/" class="boton-link">P1</a>
+        <a href="https://igonzalez86.github.io/p2/" class="boton-link">P2</a>
+        <a href="https://igonzalez86.github.io/p3/" class="boton-link">P3</a>
+        <a href="https://igonzalez86.github.io/p4/" class="boton-link">P4</a>
+        <a href="https://igonzalez86.github.io/p5_2/" class="boton-link">P5</a>
+      </div>
+    </section>
+    <section class="panel panel--der">
+      <div class="lista-botones">
+        <a href="https://igonzalez86.github.io/p6_figma_autolayout/" class="boton-link">P6</a>
+        <a href="#P7" class="boton-link">P7</a>
+        <a href="https://igonzalez86.github.io/processing_brut/" class="boton-link">P8</a>
+        <a href="https://igonzalez86.github.io/p9_calendar/" class="boton-link">P9</a>
+        <a href="https://www.figma.com/design/XLTMvBFPgx3l6KsJapXoTf/mockups_xxss?m=auto&t=fzHCm1p6CDHFDnQl-1" class="boton-link">P10</a>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
